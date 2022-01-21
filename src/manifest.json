@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter NFT PFP Cleaner",
+  "version": "0.1",
+  "minimum_chrome_version": "60",
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
+}
